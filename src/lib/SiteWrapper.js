@@ -3,11 +3,11 @@ import { css } from '@emotion/react'
 import config from './config'
 
 const SiteWrapper = (props) => {
+  const { debug } = props
   const globalGrid = config.map((breakpoint, index) => {
     let isLast = config.length === index + 1
     return `
-        @media (min-width: ${breakpoint.size}px){
-            
+        @media (min-width: ${breakpoint.size}px){    
             --breakpoint: ${breakpoint.name};
             --inner-gutter: ${breakpoint.gutter.inner};
             --outer-gutter: ${breakpoint.gutter.outer};
@@ -25,6 +25,7 @@ const SiteWrapper = (props) => {
       `}
     >
       {props.children}
+      {debug && <div className="debug"></div>}
     </div>
   )
 }
