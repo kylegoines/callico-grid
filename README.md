@@ -1,6 +1,6 @@
-# Calico grid
+# Calico grid :3
 
-Somthign im cookin up.
+Something im cookin up.
 A react component css grid with opinionated layout structure using css vars.
 
 ## Getting started
@@ -21,7 +21,7 @@ To run the project in devlopment mode run
 npm run dev
 ```
 
-## how To use Calico?
+## How To use Calico :3
 
 This grid system is managed via a config called config.js. Conifg is the structure of the css grid
 
@@ -34,6 +34,8 @@ This grid system is managed via a config called config.js. Conifg is the structu
       outer: '24px' // outer spacing of entire grid,
       inner: '24px' // space between each grid col,
     },
+    {ect},
+    {ect},
 }
 ```
 
