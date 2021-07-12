@@ -57,3 +57,4 @@ calico isnt finished, while it is workable i feel like it should be able to do a
 - `push={}` add a push prop for adding cols and colspan
 - Currently im using SiteWrapper as a context to allow the config be readily accessed - while this is not a common pattern i think it will have peformance gains when adding the next feature: dynmaic grid name props...
 - Allowing dynamic grid name props in every ColSpan and Cell. which would allow you to do something like `<Cell sm={4} md={5} lg={10} xlrg={12}>` rather than the current array system `<Cell mediaQuerySpan={[4,5,10,12]} />` (and allow both styles)
+- look into features to not wrap components in `<div class="calico-cell">...</div>` apply all the styles of the cell on the `props.children`
